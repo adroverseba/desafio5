@@ -7,9 +7,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/productos", routerProductos); //configuro Router
-app.use("/static", express.static("public"));
+app.use(express.static("public"));
 
 /**++++++++++++++++++++++++++++++++++++++++++++++ */
+// Motor de plantillas Handlebars
+
+// Entorno de Motor de Plantilla
+
+app.set("view engine", "pug");
+app.set("views", "./views");
+
 // Server Listen
 const server = app.listen(PORT, () => {
   console.log(`Servidor conectado en ${server.address().port}`);

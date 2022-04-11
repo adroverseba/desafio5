@@ -10,13 +10,10 @@ const routerProducts = express.Router();
 
 routerProducts.get("/", (req, res) => {
   async function obtener() {
-    productos = await contenedor.getAll();
-    res.send(productos);
+    let products = await contenedor.getAll();
+    res.render("products", { products });
   }
   obtener();
-  // contenedor.getAll().then((products) => {
-  //   res.send(products);
-  // });
 });
 
 routerProducts.get("/:id", (req, res) => {
@@ -26,7 +23,7 @@ routerProducts.get("/:id", (req, res) => {
 
 routerProducts.post("/", (req, res) => {
   const newProd = req.body;
-  contenedor.save(newProd).then((result) => res.send(result));
+  contenedor.save(newProd).then(() => res.redirect("/api/productos"));
 });
 
 routerProducts.put("/:id", (req, res) => {
