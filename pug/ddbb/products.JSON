@@ -1,0 +1,26 @@
+[
+  {
+    "title": "teclado",
+    "price": "5000",
+    "thumbnail": "https://redragon.es/products/best-seller/shiva-k512/",
+    "id": 1
+  },
+  {
+    "title": "mouse",
+    "price": "3000",
+    "thumbnail": "https://redragon.es/products/mouse/impact987/",
+    "id": 2
+  },
+  {
+    "title": "auricular Gamer",
+    "price": "700",
+    "thumbnail": "https://todojuegos.es/products/gamerauri/xmpl300/",
+    "id": 3
+  },
+  {
+    "title": "parlante",
+    "price": "9000",
+    "thumbnail": "https://redragon.es/products/best-seller/shiva-k512/",
+    "id": 4
+  }
+]

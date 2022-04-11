@@ -15,15 +15,15 @@
         {{#each products}}
           <tr>
             <th>
-              <%= product.id %>
+             {{id}}
             </th>
             <td>
-              <%= product.title %>
+             {{title}}
             </td>
             <td>
-              <%= product.price %>
+              {{price}}
             </td>
-            <td> <img src="<%= product.thumbnail %>" alt="Producto" height="60px">
+            <td> <img src={{thumbnail}} alt={{title}} style="max-width: 10em; max-height: 10em; object-fit: contain">
             </td>
           </tr>
          {{/each}}
