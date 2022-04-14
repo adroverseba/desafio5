@@ -56,7 +56,7 @@ class Container {
       //genero un localizador de id para saber si el mismo buscado existe o no, en base a eso responder
       const locateId = read.some((element) => element.id == id);
       if (!locateId) {
-        // return `El id ingresado no es valido, pruebe con algun numero superior a 0 y menor o igual a ${read.length}`;
+        // return `El id ingresado no es valido, pruebe con algun numero superior a 0 y menor o igual a ${read.length}`;   if (!producto) res.status(404).send();
         return { error: "producto no encontrado" };
       } else {
         const elemento = read.filter((element) => element.id == id);

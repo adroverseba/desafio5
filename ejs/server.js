@@ -15,49 +15,6 @@ app.set("views", "./views");
 
 app.use(express.static("public"));
 
-/**++++++++++++++++++++++++++++++++++++++++++ */
-
-// routerProductos.get("/:id", (req, res) => {
-//   const { id } = req.params;
-//   const producto = products.find((prod) => prod.id == id);
-
-//   if (!producto) res.status(404).send();
-
-//   res.json(producto);
-// });
-
-// routerProductos.post("/", (req, res) => {
-//   const { title, price, thumbnail } = req.body;
-//   const producto = {
-//     title,
-//     price,
-//     thumbnail,
-//     id: products.length + 1,
-//   };
-//   products.push(producto);
-//   res.redirect("/productos/vista");
-// });
-
-// routerProductos.put("/:id", (req, res) => {
-//   const { id } = req.params;
-//   const { title, price, thumbnail } = req.body;
-
-//   const productFind = products.some((producto) => producto.id == id);
-//   if (productFind) {
-//     products.map((prod) => {
-//       if (prod.id == id) {
-//         prod.title = title ? title : prod.title;
-//         prod.price = price ? price : prod.price;
-//         prod.thumbnail = thumbnail ? thumbnail : prod.thumbnail;
-//       }
-//       return prod;
-//     });
-//     res.send(products[id - 1]);
-//   } else {
-//     res.status(404).json({ error: "Producto no encontrado" });
-//   }
-// });
-
 /**++++++++++++++++++++++++++++++++++++++++++++++ */
 // Server Listen
 
